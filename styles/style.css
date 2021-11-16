@@ -105,10 +105,9 @@
   z-index: -1;
 }
 
-/* Секция описания */
+/* Секция Описание */
 .description {
   /* Позиционирование */
-  margin-top: 100px;
   display: flex;
   /* border: 1px solid red; */
 }
@@ -116,8 +115,12 @@
 /* Блок текста в две колонки */
 .two-columns {
   width: 80%;
+  margin: 0 auto;
+}
+
+.two-columns_place_description {
   /* Позиционирование */
-  margin: 100px auto;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -135,7 +138,7 @@
   /* border: 1px solid red; */
 }
 
-/* Основной текст блока */
+/* Блок основного текста */
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
@@ -145,6 +148,7 @@
   /* border: 1px solid red; */
 }
 
+/* Параграфы основного текста */
 .two-columns__paragraph {
   /* Позиционирование */
   margin: 0 auto 30px;
@@ -166,6 +170,96 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
+}
+
+/* Секция Цифры */
+.digits {
+  /* Позиционирование */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+/* Блок пзаголовка секции */
+.section-title {
+  width: 60%;
+  /* Параметры текста */
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+/* Модификатор позиционирования заголовка в секции Цифры */
+.section-title_place_digits {
+  /* Позиционирование */
+  margin: 100px auto 0;
+}
+
+/* Блок подзаголовка секции */
+.section-subtitle {
+  width: 60%;
+  /* Параметры текста */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+/* Модификатор позиционирования подзаголовка в секции Цифры */
+.section-subtitle_place_digits {
+  margin: 20px auto 0;
+}
+
+/* Блок таблицы */
+.table {
+  width: 1100px;
+  /* Позиционирование */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+/* Модификатор позиционирования таблицы в секторе Цифры */
+.table_place_digits {
+  margin: 0 auto;
+}
+
+/* Ячейка таблицы */
+.table__cell {
+  width: 250px;
+  /* Позиционирование */
+  margin: 60px 0 0;
+  /* border: 1px solid red; */
+}
+
+/* Заголовок ячейки */
+.table__heading {
+  width: 250px;
+  /* Позиционирование */
+  margin: 0 auto;
+  /* Параметры текста */
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  /* border: 1px solid red; */
+}
+
+/* Параграфы текста */
+.table__text {
+  width: 250px;
+  /* Позиционирование */
+  margin: 20px 0 0;
+  /* Параметры текста */
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  /* border: 1px solid red; */
 }
 
 /* и элемента с модификатором вида ключ-значение */
