@@ -18,7 +18,7 @@
   justify-content: center;
   flex-wrap: wrap;
   /* Фон на заднем плане */
-  background-color:  #f2f2f2;
+  background-color: #f2f2f2;
   z-index: -99;
 }
 
@@ -227,7 +227,7 @@
 
 /* Модификатор позиционирования таблицы в секторе Цифры */
 .table_place_digits {
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 /* Ячейка таблицы */
@@ -261,6 +261,69 @@
   font-weight: normal;
   /* border: 1px solid red; */
 }
+
+/* Секция Фейнман */
+.feynman {
+  height: 890px;
+  /* Позиционирование */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* Фон на заднем плане */
+  background-color: #f2f2f2;
+  z-index: -99;
+}
+
+/* Заголовок секции Фейнман */
+.feynman__title {
+  width: 648px;
+  /* Позиционирование */
+  margin: 100px auto 0;
+  /* Параметры текста */
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+/* Подзаголовок секции Фейнман */
+.feynman__subtitle {
+  width: fit-content;
+  /* Позиционирование */
+  margin: 70px auto 0;
+  /* Параметры текста */
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+/* Элемент ссылки секции Фейнмана */
+.feynman__link {
+  /* Позиционирование */
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  /* Параметры текста */
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+/* Основная иллюстрация секции Фейнмана */
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  /* Позиционирование */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
