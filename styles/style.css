@@ -1,26 +1,111 @@
+/* Стили для всей страницы */
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Блок шапки */
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  position: relative;
+  /* Позиционирование флекс-элементов */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Фон на заднем плане */
+  background-color:  #f2f2f2;
+  z-index: -99;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+/* Нужно ли позиционировать, растягивать и так далее? */
+/* Блок логотипа */
+.logo {
+  width: 183px;
+  height: 32px;
+  /* Логотип должен быть на переднем плане */
+  background-image: url(../images/logo_place_header.svg);
+  z-index: 99;
 }
+
+/* Модификатор позиционирования логотипа в шапке */
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+/* Заголовок шапки */
+.header__title {
+  width: 730px;
+  height: fit-content;
+  /* Позиционирование */
+  display: flex;
+  align-items: flex-start;
+  margin-left: 64px;
+  /* Параметры текста */
+  line-height: 94px;
+  font-size: 102px;
+  font-weight: 500;
+  /* Текст должен заслонять изображения */
+  z-index: 1;
+  /* border: 1px solid red; */
+}
+
+/* Подзаголовок запки */
+.header__subtitle {
+  width: 388px;
+  /* Позиционирование */
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  /* Параметры текста */
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  /* Текст должен заслонять изображения */
+  z-index: 1;
+  /* border: 1px solid red; */
+}
+
+/* Ссылка в подзаголовке шапки */
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+/* Главная иллюстрация шапки */
+.header__main-illustration {
+  width: 765px;
+
+  /* Зачем просят ужать изображение? */
+  /* height: 608px; */
+
+  /* Позиционирования */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* border: 1px solid red; */
+}
+
+/* Фоновый элемент - синий квадрат */
+.header__square-pic {
+  width: 568px;
+  height: 568px;
+  /* Позиционирования */
+  position: absolute;
+  top: 64px;
+  right: 0;
+  /* Фоновый элемент должен быть за основным изображением */
+  background-color: #2f80ed;
+  z-index: -1;
+}
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
