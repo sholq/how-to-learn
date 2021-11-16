@@ -50,7 +50,7 @@
   /* Параметры текста */
   line-height: 94px;
   font-size: 102px;
-  font-weight: 500;
+  font-weight: 600;
   /* Текст должен заслонять изображения */
   z-index: 1;
   /* border: 1px solid red; */
@@ -105,7 +105,68 @@
   z-index: -1;
 }
 
+/* Секция описания */
+.description {
+  /* Позиционирование */
+  margin-top: 100px;
+  display: flex;
+  /* border: 1px solid red; */
+}
 
+/* Блок текста в две колонки */
+.two-columns {
+  width: 80%;
+  /* Позиционирование */
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Заголовок */
+.two-columns__brief {
+  width: 175px;
+  /* Позиционирование */
+  margin: 0 auto;
+  /* Параметры текста */
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  /* border: 1px solid red; */
+}
+
+/* Основной текст блока */
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  /* Внешняя граница между первой и второй колонкой */
+  /* для читабельности при уменьшении ширины экрана */
+  margin-left: 10px;
+  /* border: 1px solid red; */
+}
+
+.two-columns__paragraph {
+  /* Позиционирование */
+  margin: 0 auto 30px;
+  /* Параметры текста */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  /* border: 1px solid red; */
+}
+
+/* Псевдоатрибут для последнего параграфа */
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Выделение части текста */
+.two-columns__span-accent {
+  /* Параметры текста */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
