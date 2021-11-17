@@ -16,7 +16,7 @@
       <h1 class="header__title">Научиться учиться</h1>
       <!-- Подзаголовок с якорной ссылкой в конце -->
       <h2 class="header__subtitle">Какие современные и эффективные подходы к обучению
-        вы можете использовать в своей жизни? <a class="header__link" href="#">Узнать→</a></h2>
+        вы можете использовать в своей жизни? <a class="header__link" href="#feynman">Узнать→</a></h2>
       <!-- Главная иллюстрация -->
       <img class="header__main-illustration" src="./images/header-image.png" alt="Фрагмент из картины Фёдора Решетникова 'Опять двойка'">
       <!-- Фоновый элемент - синий квадрат -->
@@ -88,22 +88,22 @@
         </div>
       </section>
 
-      <section class="feynman">
+      <section class="feynman" id="feynman">
         <!-- Заголовок секции -->
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <!-- Подзаголовок секции -->
         <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
         <!-- Ссылка -->
-        <a class="feynman__link" href="#">Подробнее →</a>
+        <a class="feynman__link" href="https://fs.blog/feynman-learning-technique/">Подробнее →</a>
         <!-- Основная иллюстрация секции -->
         <img class="feynman__image" src="./images/feynman.png" alt="Фотография Ричарда Фейнмана">
       </section>
 
       <section class="kaufman">
         <!-- Заголовок секции -->
-        <h2 class="section-title section-title_theme_light section-title_theme_dark">Принципы обучения</h2>
+        <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <!-- Подзаголовок секции -->
-        <h3 class="section-subtitle section-subtitle_theme_light section-subtitle_theme_dark">от Джоша Кауфмана</h3>
+        <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
         <!-- Блок таблицы -->
         <div class="table table_theme_light table_theme_dark">
           <!-- Ячейка таблицы -->
@@ -155,7 +155,38 @@
       </section>
     </main>
     <footer class="footer">
-
+      <div class="footer__columns">
+        <!-- Колонка копирайта -->
+        <div class="footer__column footer__column_content_copyright">
+          <p class="footer__author">© 2021, Семён Силкин</p>
+        </div>
+        <!-- Колонка информации о Практикуме -->
+        <div class="footer__column footer__column_content_info">
+          <h3 class="footer__column-heading">О практикуме</h3>
+          <div class="footer__column-links">
+            <a class="footer__column-link" href="https://practicum.yandex.ru/">Главная</a>
+            <a class="footer__column-link" href="https://yandex.ru/support/praktikum/index.html">Концепция</a>
+            <a class="footer__column-link" href="https://yandex.ru/support/praktikum/mentors.html">Наставники</a>
+          </div>
+        </div>
+        <!-- Колонка социальных сетей -->
+        <div class="footer__column footer__column_content_social">
+          <h3 class="footer__column-heading">Соцсети</h3>
+          <div class="footer__column-links">
+            <a class="footer__column-link" href="https://www.facebook.com/yandex.practicum">
+              <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Логотип Facebook">Facebook
+            </a>
+            <a class="footer__column-link" href="https://vk.com/yandex.practicum">
+              <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="Логотип ВКонтакте">ВКонтакте
+            </a>
+            <a class="footer__column-link" href="https://www.instagram.com/yndx.practicum">
+              <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Логотип Instagram">Instagram
+            </a>
+          </div>
+        </div>
+        <!-- Логотип с модификатором позиционирования в подвале -->
+        <div class="logo logo_place_footer"></div>
+      </div>
     </footer>
   </div>
 </body>
