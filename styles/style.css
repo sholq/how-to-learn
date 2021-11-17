@@ -27,7 +27,7 @@
   height: 32px;
   /* Логотип должен быть на переднем плане */
   background-image: url(../images/logo_place_header.svg);
-  z-index: 2;
+  z-index: 3;
 }
 
 /* Модификатор логотипа в шапке */
@@ -49,20 +49,19 @@
   height: fit-content;
   /* Позиционирование */
   display: flex;
-  align-items: flex-start;
-  margin-left: 64px;
+  margin: 0 0 0 64px ;
   /* Параметры текста */
   line-height: 94px;
   font-size: 102px;
   font-weight: 600;
-  z-index: 2;
-  border: 1px solid red;
+  z-index: 3;
 }
 
 /* Подзаголовок шапки */
 .header__subtitle {
   width: 388px;
   /* Позиционирование */
+  margin: 0;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -70,8 +69,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 2;
-  border: 1px solid red;
+  z-index: 3;
 }
 
 /* Ссылка в подзаголовке шапки */
@@ -83,18 +81,23 @@
 /* Основная иллюстрация шапки */
 .header__main-illustration {
   width: 765px;
+  height: 608px;
   /* Позиционирование */
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 2;
-  border: 1px solid red;
 }
 
 /* Фоновый элемент - синий квадрат */
 .header__square-pic {
-  width: 568px;
-  height: 568px;
+  /* Уменьшил размеры квадрата из-за ошибки в брифе. */
+  /* А именно, сумма стороны квадрата и отступа от верхнего края больше минимальной высоты шапки: */
+  /* 568px + 64px = 632px против 600px min-hight. */
+  /* Из-за этого на мобильных устройствах (iPhone X) при альбомной ориаентации */
+  /* квадрат выходит за пределы шапки. */
+  width: 536px;
+  height: 536px;
   /* Позиционирование */
   position: absolute;
   top: 64px;
@@ -108,20 +111,15 @@
 .description {
   /* Позиционирование */
   display: flex;
-  border: 1px solid red;
 }
 
 /* Блок текста в две колонки */
 .two-columns {
   width: 80%;
+  /* Минимальная ширина складывается из ширины первого и минимальной ширины второго стобцов */
+  min-width: 959px;
   /* Позиционирование */
-  margin: 0 auto;
-}
-
-/* Модификатор блока */
-.two-columns_place_description {
-  /* Позиционирование */
-  margin-top: 100px;
+  margin: 100px auto 0;
   display: flex;
   justify-content: space-between;
 }
@@ -130,24 +128,18 @@
 .two-columns__brief {
   width: 175px;
   /* Позиционирование */
-  margin: 0 auto;
+  margin: 0;
   /* Параметры текста */
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-  border: 1px solid red;
 }
 
 /* Блок основного текста */
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  /* Позиционирование */
-  /* Внешняя граница между первой и второй колонкой */
-  /* для читабельности при уменьшении ширины экрана */
-  margin-left: 10px;
-  border: 1px solid red;
 }
 
 /* Параграфы основного текста */
@@ -158,7 +150,6 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  border: 1px solid red;
 }
 
 /* Псевдоатрибут для последнего параграфа блока*/
@@ -180,80 +171,65 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
 }
 
 /* Блок заголовка секции */
 .section-title {
   width: 60%;
   /* Параметры текста */
+  margin: 100px auto 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
   text-align: center;
-  border: 1px solid red;
-}
-
-/* Модификатор заголовка в секции Цифры */
-.section-title_theme_light {
-  margin: 100px auto 0;
 }
 
 /* Модификатор заголовка в секции Кауфман */
 .section-title_theme_dark {
   margin: 90px auto 0;
   color: white;
+  z-index: 2;
 }
 
 /* Блок подзаголовка секции */
 .section-subtitle {
   width: 60%;
   /* Параметры текста */
+  margin: 20px auto 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  border: 1px solid red;
-}
-
-/* Модификатор подзаголовка в секции Цифры */
-.section-subtitle_theme_light {
-  margin: 20px auto 0;
 }
 
 /* Модификатор подзаголовка в секции Кауфман */
 .section-subtitle_theme_dark {
   margin: 20px auto 0;
   color: white;
+  z-index: 2;
 }
 
 /* Блок таблицы */
 .table {
   width: 1100px;
   /* Позиционирование */
+  margin: 0 auto 100px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid red;
-}
-
-/* Модификатор таблицы в секторе Цифры */
-.table_theme_light {
-  margin: 0 auto 100px;
 }
 
 /* Модификатор таблицы в секторе Кауфман */
 .table_theme_dark {
   margin: 0 auto 90px;
   color: white;
+  z-index: 2;
 }
 
 /* Ячейка таблицы */
 .table__cell {
   width: 250px;
   margin: 60px 0 0;
-  border: 1px solid red;
 }
 
 /* Модификатор ячейки таблицы для темной темы */
@@ -270,7 +246,6 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  border: 1px solid red;
 }
 
 /* Параграфы текста */
@@ -281,7 +256,6 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  border: 1px solid red;
 }
 
 /* Секция Фейнман */
@@ -355,7 +329,6 @@
   position: relative;
   /* Фон */
   background-color: #1f1f1f;
-  z-index: -99;
   /* Свойство из второго спринта */
   overflow: hidden;
 }
@@ -366,7 +339,7 @@
   /* Позиционирование */
   position: absolute;
   right: -210px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .footer {
@@ -375,10 +348,8 @@
   display: flex;
   /* Фон */
   background-color: #1f1f1f;
-  z-index: -99;
 /* Параметры текста */
   color: white;
-  border: 1px solid red;
 }
 
 /* Основной элемент подвала */
@@ -389,14 +360,12 @@
   margin: 60px auto 40px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 }
 
 .footer__column {
+  /* Позиционирование */
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  border: 1px solid red;
 }
 
 /* Модификаторы стобцов */
@@ -404,14 +373,6 @@
   position: relative;
   flex-basis: 711px;
 }
-
-/* .footer__column_content_info {
-
-}
-
-.footer__column_content_social {
-
-} */
 
 .footer__column-heading {
   /* Позиционирование */
@@ -421,7 +382,6 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
-  border: 1px solid red;
 }
 
 .footer__column-links {
@@ -430,8 +390,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
-  border: 1px solid red;
 }
 
 .footer__column-link {
@@ -445,7 +403,6 @@
   font-weight: normal;
   text-decoration: none;
   color: white;
-  border: 1px solid red;
 }
 
 .footer__author {
