@@ -25,8 +25,11 @@
 .logo {
   width: 183px;
   height: 32px;
-  /* Логотип должен быть на переднем плане */
   background-image: url(../images/logo_place_header.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
   z-index: 3;
 }
 
@@ -94,7 +97,7 @@
   /* Уменьшил размеры квадрата из-за ошибки в брифе. */
   /* А именно, сумма стороны квадрата и отступа от верхнего края больше минимальной высоты шапки: */
   /* 568px + 64px = 632px против 600px min-hight. */
-  /* Из-за этого на мобильных устройствах (iPhone X) при альбомной ориаентации */
+  /* Из-за этого, например, на мобильных устройствах (iPhone X) при альбомной ориаентации */
   /* квадрат выходит за пределы шапки. */
   width: 536px;
   height: 536px;
@@ -323,19 +326,19 @@
 /* Секция Кауфман */
 .kaufman {
   /* Позиционирование */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   /* Фон */
   background-color: #1f1f1f;
-  /* Свойство из второго спринта */
   overflow: hidden;
 }
 
 /* Фоновый элемент - синий треугольник */
 .kaufman__triangle {
   width: 877px;
+  height: 877px;
   /* Позиционирование */
   position: absolute;
   right: -210px;
@@ -390,13 +393,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* Ликвидация внутреннего отступа дочернего тега <ul> */
+  padding: 0;
+  /* Ликвидация маркера дочернего тега <li> */
+  list-style: none;
 }
 
 .footer__column-link {
-  /* Позиционирование */
+  /* Позиционирование логотипа социальных сетей*/
   display: flex;
   align-items: center;
-  margin: 0;
   /* Параметры текста */
   line-height: 30px;
   font-size: 18px;
@@ -412,6 +418,8 @@
   bottom: 0;
   left: 0;
   /* Параметры текста */
+  text-decoration: none;
+  color: white;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
