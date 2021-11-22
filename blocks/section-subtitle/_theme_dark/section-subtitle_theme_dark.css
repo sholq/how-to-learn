@@ -1,0 +1,7 @@
+/* Модификатор подзаголовка в секции Кауфман */
+.section-subtitle_theme_dark {
+  margin: 20px auto 0;
+  color: white;
+  z-index: 2;
+}
+

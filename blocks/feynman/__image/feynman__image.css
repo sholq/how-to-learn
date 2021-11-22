@@ -1,0 +1,10 @@
+/* Основная иллюстрация секции Фейнмана */
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  /* Позиционирование */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+

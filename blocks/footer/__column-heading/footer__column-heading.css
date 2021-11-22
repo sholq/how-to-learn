@@ -1,0 +1,10 @@
+.footer__column-heading {
+  /* Позиционирование */
+  display: flex;
+  margin: 0 0 20px;
+  /* Параметры текста */
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+

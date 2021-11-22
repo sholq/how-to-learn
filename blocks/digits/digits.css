@@ -1,0 +1,8 @@
+/* Секция Цифры */
+.digits {
+  /* Позиционирование */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

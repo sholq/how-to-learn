@@ -1,0 +1,12 @@
+.footer__column-link {
+  /* Позиционирование логотипа социальных сетей*/
+  display: flex;
+  align-items: center;
+  /* Параметры текста */
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+

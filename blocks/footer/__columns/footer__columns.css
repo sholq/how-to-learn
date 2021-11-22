@@ -1,0 +1,10 @@
+/* Основной элемент подвала */
+.footer__columns {
+  width: 90%;
+  /* Позиционирование */
+  position: relative;
+  margin: 60px auto 40px;
+  display: flex;
+  justify-content: space-between;
+}
+

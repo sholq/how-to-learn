@@ -1,0 +1,15 @@
+/* Подзаголовок шапки */
+.header__subtitle {
+  width: 388px;
+  /* Позиционирование */
+  margin: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  /* Параметры текста */
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 3;
+}
+

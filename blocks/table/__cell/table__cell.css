@@ -1,0 +1,6 @@
+/* Ячейка таблицы */
+.table__cell {
+  width: 250px;
+  margin: 60px 0 0;
+}
+

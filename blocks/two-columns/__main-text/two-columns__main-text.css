@@ -1,0 +1,6 @@
+/* Блок основного текста */
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+

@@ -1,0 +1,14 @@
+/* Параграфы основного текста */
+.two-columns__paragraph {
+  /* Позиционирование */
+  margin: 0 auto 30px;
+  /* Параметры текста */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* Псевдоатрибут для последнего параграфа блока*/
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}

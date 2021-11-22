@@ -1,0 +1,16 @@
+/* Фоновый элемент - синий треугольник */
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  /* Позиционирование */
+  position: absolute;
+  right: -210px;
+  z-index: 1;
+  /* Фон */
+  background-image: url(../../../images/kaufman-triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+}
+

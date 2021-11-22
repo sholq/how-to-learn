@@ -1,0 +1,12 @@
+.footer__column-links {
+  /* Позиционирование */
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Ликвидация внутреннего отступа дочернего тега <ul> */
+  padding: 0;
+  /* Ликвидация маркера дочернего тега <li> */
+  list-style: none;
+}
+

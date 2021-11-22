@@ -1,0 +1,25 @@
+@import url(../header/header.css);
+@import url(../logo/logo.css);
+@import url(../logo/_place_footer/logo_place_footer.css);
+@import url(../logo/_place_header/logo_place_header.css);
+@import url(../description/description.css);
+@import url(../two-columns/two-columns.css);
+@import url(../digits/digits.css);
+@import url(../section-title/section-title.css);
+@import url(../section-title/_theme_dark/section-title_theme_dark.css);
+@import url(../section-subtitle/section-subtitle.css);
+@import url(../section-subtitle/_theme_dark/section-subtitle_theme_dark.css);
+@import url(../table/table.css);
+@import url(../table/_theme_dark/table_theme_dark.css);
+@import url(../feynman/feynman.css);
+@import url(../kaufman/kaufman.css);
+@import url(../footer/footer.css);
+
+/* Стили для всей страницы */
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+

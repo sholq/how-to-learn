@@ -1,0 +1,11 @@
+/* Основная иллюстрация шапки */
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  /* Позиционирование */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
