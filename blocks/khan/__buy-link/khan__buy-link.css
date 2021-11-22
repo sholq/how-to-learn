@@ -1,0 +1,10 @@
+.khan__buy-link {
+  /* Позиционирование */
+  margin: 0 0 0 48px;
+  /* Параметры текста */
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+}

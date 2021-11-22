@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   /* Фон */
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 

@@ -1,0 +1,8 @@
+.khan__quote-author {
+  /* Позиционирование */
+  margin: 36px 0 0;
+  /* Параметры текста */
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}

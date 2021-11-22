@@ -1,0 +1,9 @@
+.khan__quote {
+  width: 790px;
+  /* Позиционирование */
+  margin: 50px 0 0;
+  /* Параметры текста */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
