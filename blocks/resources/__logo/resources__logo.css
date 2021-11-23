@@ -5,3 +5,8 @@
   display: flex;
   justify-content: center;
 }
+
+.resources__logo:hover {
+  opacity: 0.45;
+  transition: 1.25s;
+}

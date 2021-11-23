@@ -9,3 +9,6 @@
   font-weight: normal;
 }
 
+.footer__author:hover {
+  opacity: 0.25;
+}
