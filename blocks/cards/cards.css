@@ -1,8 +1,3 @@
-@import url(./cards__description/cards__description.css);
-@import url(./cards__image/cards__image.css);
-@import url(./cards__item/cards__item.css);
-@import url(./cards__title/cards__title.css);
-
 /* Блок карточек */
 .cards {
   width: 920px;
