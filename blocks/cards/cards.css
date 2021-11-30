@@ -2,7 +2,6 @@
 .cards {
   width: 920px;
   /* Позиционирование */
-  margin: 0 auto;
   padding: 0;
   list-style: none;
   display: flex;

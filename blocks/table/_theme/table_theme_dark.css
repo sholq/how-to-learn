@@ -1,6 +1,5 @@
 /* Модификатор таблицы в секторе Кауфман */
 .table_theme_dark {
-  margin: 0 auto 90px;
   color: white;
   z-index: 2;
 }

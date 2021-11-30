@@ -4,7 +4,6 @@
   /* Минимальная ширина складывается из ширины первого и минимальной ширины второго стобцов */
   min-width: 959px;
   /* Позиционирование */
-  margin: 100px auto 0;
   display: flex;
   justify-content: space-between;
 }
