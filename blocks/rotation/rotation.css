@@ -1,14 +1,31 @@
-@keyframes rotation {
+/* Анимация вращения */
+@-webkit-keyframes rotation {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 .rotation {
-  animation: rotation 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  -webkit-animation: rotation 20s;
+          animation: rotation 20s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }

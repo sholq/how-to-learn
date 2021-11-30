@@ -2,11 +2,18 @@
   width: 270px;
   height: 38px;
   /* Позиционирование */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  transition: opacity 1s;
 }
 
 .resources__logo:hover {
   opacity: 0.45;
+  -webkit-transition: 1.25s;
+  -o-transition: 1.25s;
   transition: 1.25s;
 }

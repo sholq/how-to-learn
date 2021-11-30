@@ -5,6 +5,7 @@
   position: absolute;
   top: 30px;
   left: 64px;
+  transition: opacity 1s;
 }
 
 .logo_place_header:hover {

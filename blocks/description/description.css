@@ -1,6 +1,7 @@
 /* Секция Описание */
 .description {
   /* Позиционирование */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-

@@ -1,6 +1,8 @@
 .footer {
   min-height: 350px;
   /* Позиционирование */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   /* Фон */
   background-color: #1f1f1f;
