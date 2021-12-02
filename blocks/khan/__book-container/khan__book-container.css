@@ -1,5 +1,4 @@
 .khan__book-container {
-  height: 608px;
   /* Позиционирование */
   margin-top: 68px;
   display: -webkit-box;
@@ -10,5 +9,4 @@
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  overflow: hidden;
 }
