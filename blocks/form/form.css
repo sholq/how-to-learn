@@ -1,0 +1,7 @@
+.form {
+  width: 60%;
+  /* Позиционирование */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

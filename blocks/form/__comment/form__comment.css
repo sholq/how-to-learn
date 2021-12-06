@@ -1,0 +1,8 @@
+.form__comment {
+  /* Позиционирование */
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 30px 30px 50px;
+  padding: 0;
+}

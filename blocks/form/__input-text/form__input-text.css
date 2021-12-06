@@ -1,0 +1,14 @@
+.form__input-text {
+  font-family: inherit;
+  margin: 10px 0;
+}
+
+.form__input-text:focus {
+	outline: none;
+}
+
+.form__input-text::placeholder {
+  line-height: 30px;
+  font-size: 18px;
+  color: #bcbcc4;
+}

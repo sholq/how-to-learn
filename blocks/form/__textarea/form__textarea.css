@@ -1,0 +1,19 @@
+.form__textarea {
+  font-family: inherit;
+  margin: 10px 0 0;
+  resize: none;
+  /* Параметры текста */
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.form__textarea:focus {
+	outline: none;
+}
+
+.form__textarea::placeholder {
+  line-height: 30px;
+  font-size: 18px;
+  color: #bcbcc4;
+}

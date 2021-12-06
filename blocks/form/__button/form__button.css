@@ -1,0 +1,7 @@
+.form__button {
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+}
